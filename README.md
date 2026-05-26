@@ -14,30 +14,39 @@ python mask_finder.py <IP1> <IP2>
 ## Примеры
 
 python mask_finder.py 192.168.1.1 192.168.2.1
+
 Вывод: /22
 
 python mask_finder.py 192.168.1.1 192.168.1.1
+
 Вывод: /32
 
 python mask_finder.py 10.0.0.1 10.0.0.0
+
 Вывод: /31
 
 python mask_finder.py 1.1.1.1 200.200.200.200
+
 Вывод: /0
 
 python mask_finder.py 2001:db8::1 2001:db8::2
+
 Вывод: /127
 
 python mask_finder.py ::1 ::2
+
 Вывод: /126
 
 python mask_finder.py :: ::1
+
 Вывод: /127
 
 python mask_finder.py 192.168.1.1 2001:db8::1
+
 Error: IP addresses of different versions (IPv4 and IPv6)
 
 python mask_finder.py 256.1.1.1 192.168.1.1
+
 Error: Octet out of range 0-255: 256
 
 ## Коды возврата
