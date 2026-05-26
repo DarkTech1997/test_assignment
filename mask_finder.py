@@ -96,6 +96,7 @@ def main():
         total_bits = 32 if v1 == 4 else 128
         num1 = ip_to_int(ip1, v1)
         num2 = ip_to_int(ip2, v1)
+
         # Вычисляем длину общего префикса (минимальную маску)
         if num1 != num2:
             diff = num1 ^ num2
