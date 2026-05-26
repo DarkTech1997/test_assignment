@@ -1,0 +1,16 @@
+
+Lib/
+Scripts/
+pyvenv.cfg
+__pycache__/
+*.pyc
+
+
+.idea/
+
+
+*.log
+test_log_*.txt
+
+
+# test_log_22_05_2026.txt
